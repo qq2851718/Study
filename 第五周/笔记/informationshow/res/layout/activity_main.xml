@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25px"
+        android:text="个人信息输入"/>
+
+  
+    
+       
+        <TextView 
+        android:id="@+id/titleName"
+        android:layout_width="80px"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:gravity="center_vertical"
+       android:layout_below="@id/title"
+       android:layout_marginTop="10px"
+       android:layout_marginLeft="10px"
+        android:text="姓名:"/>  
+        
+   <EditText 
+       android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:layout_alignTop="@id/titleName"
+        android:layout_toRightOf="@id/titleName"
+        android:hint="请输入姓名"
+       />
+   
+   <TextView 
+        android:id="@+id/titlePhone"
+        android:layout_width="80px"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:gravity="center_vertical"
+       android:layout_below="@id/titleName"
+       android:layout_marginTop="10px"
+       android:layout_marginLeft="10px"
+        android:text="电话:"/>  
+        
+   <EditText 
+       android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:layout_alignTop="@id/titlePhone"
+        android:layout_toRightOf="@id/titlePhone"
+        android:inputType="phone"
+        android:hint="请输入电话"
+       />
+   
+      <TextView 
+        android:id="@+id/titleEmail"
+        android:layout_width="80px"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:gravity="center_vertical"
+       android:layout_below="@id/titlePhone"
+       android:layout_marginTop="10px"
+       android:layout_marginLeft="10px"
+        android:text="Email:"/>  
+        
+   <EditText 
+       android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:textSize="20px"
+        android:layout_alignTop="@id/titleEmail"
+        android:layout_toRightOf="@id/titleEmail"
+        android:hint="请输入Email"
+       />
+   
+   <Button 
+       android:id="@+id/btn"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"
+       android:layout_below="@id/email"
+       android:layout_marginTop="5px"
+       android:layout_centerHorizontal="true"
+       android:text="提交"
+       android:onClick="submit"
+       />
+   
+      <EditText 
+       android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20px"
+        android:layout_below="@id/btn"
+        android:layout_margin="10px"
+        android:gravity="top"
+        android:hint="此处将显示个人信息"
+       />
+        
+
+    
+   
+
+
+</RelativeLayout>

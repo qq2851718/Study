@@ -1,0 +1,12 @@
+package com.example.news;
+
+import android.app.Activity;
+
+public class NewsInfo extends Activity {
+
+	
+	protected Integer id;
+	protected String titleString;
+	protected String conterString;
+	protected String imgUrl;
+}
